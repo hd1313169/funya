@@ -1,13 +1,16 @@
+//  LOGO ----------------------------------------------------------------
 .logo {
     height: 40px;
     width: auto;
 
-    @include medium{
+    @include medium {
         height: 44px;
     }
 }
- .nav{
-    &-counter{
+
+//  導覽列 ----------------------------------------------------------------
+.nav {
+    &-counter {
         width: 20px;
         height: 20px;
         display: flex;
@@ -22,12 +25,31 @@
         transform: translate(0%, -25%);
     }
 
-    &-img{
+    &-img {
         width: 60px;
         height: auto;
         border-radius: 100px;
     }
- }
+}
+
+//  下拉選單 ----------------------------------------------------------------
+.dropdown {
+    &-toggle {
+        &::after {
+            display: none !important;
+        }
+    }
+
+    &-item {
+        img {
+            width: 24px;
+            vertical-align: top;
+            margin-right: 8px;
+        }
+    }
+}
+
+//  按鈕 ----------------------------------------------------------------
 .btn {
     &-primary {
         position: relative;
@@ -37,7 +59,7 @@
         align-items: center;
         border-radius: 12px;
 
-        &:hover {
+        &:active {
             transform: translate(0, 6px);
         }
 
@@ -59,6 +81,22 @@
     }
 }
 
-.rounded-12 {
-    border-radius: 12px;
+
+.footer{
+    .sitemap{
+        display: flex;
+        flex-direction: column;
+    
+        @include medium{
+            flex-direction: row;
+        }
+    }
+
+    .social-list{
+        display: flex;
+
+        @include medium{
+            justify-content: end;
+        }
+    }
 }
