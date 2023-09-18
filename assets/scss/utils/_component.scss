@@ -47,6 +47,38 @@
             margin-right: 8px;
         }
     }
+
+    &-menu {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0 , 12%);
+
+        &-notify {
+            min-width: 480px !important;
+            height: 600px;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar-track {
+                border-radius: 100px;
+                background-color: $white;
+            }
+
+            &::-webkit-scrollbar {
+                width: 12px;
+                background-color: $white;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                border-radius: 100px;
+                background-color: $gray-300;
+            }
+
+            &-newLabel {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+
+
 }
 
 //  按鈕 ----------------------------------------------------------------
@@ -82,21 +114,26 @@
 }
 
 
-.footer{
-    .sitemap{
+.footer {
+    .sitemap {
         display: flex;
         flex-direction: column;
-    
-        @include medium{
+
+        @include medium {
             flex-direction: row;
         }
     }
 
-    .social-list{
+    .social-list {
         display: flex;
 
-        @include medium{
+        @include medium {
             justify-content: end;
         }
     }
+}
+
+// 圓角
+.rounded-8 {
+    border-radius: 8px;
 }
