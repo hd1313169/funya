@@ -28,27 +28,62 @@
         <div class="mt-24 mb-32 my-md-40">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators mb-8">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="../assets/images/banner-01.png" class="d-block w-100 rounded-16" alt="banner">
+                <img src="../assets/images/banner-01.png" class="d-none d-md-block w-100 rounded-16" alt="banner">
+                <img src="../assets/images/banner-01-mobile.png" class="d-md-none w-100 rounded-16" alt="banner">
               </div>
               <div class="carousel-item rounded-16">
-                <img src="../assets/images/banner-02.png" class="d-block w-100 rounded-16" alt="banner">
+                <img src="../assets/images/banner-02.png" class="d-none d-md-block w-100 rounded-16" alt="banner">
+                <img src="../assets/images/banner-02-mobile.png" class="d-md-none w-100 rounded-16" alt="banner">
               </div>
             </div>
-            <button class="carousel-control-prev justify-content-start ps-16" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <button class="carousel-control-prev justify-content-start ps-16" type="button"
+              data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true" style="width: 24px;"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next justify-content-end pe-16" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <button class="carousel-control-next justify-content-end pe-16" type="button"
+              data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true" style="width: 24px;"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
         </div>
+        <!-- banner end -->
+        <!-- 搜尋欄 -->
+        <div class="mb-32 mb-md-48">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+              <div class="bg-light shadow d-flex justify-content-between p-12 rounded-16 border">
+                <select class="form-select w-40 border-0" aria-label="Default select example">
+                  <option selected>不限地區</option>
+                  <option value="台北">台北</option>
+                  <option value="台中">台中</option>
+                  <option value="高雄">高雄</option>
+                </select>
+                <form class="d-flex w-60 border-start">
+                  <input class="form-control border-0 ps-24" type="search" placeholder="想看的書" aria-label="Search">
+                  <div class="position-relative">
+                    <div class="btn-height bg-primary-dark">11</div>
+                    <div class="btn-primary bg-primary p-12 pb-8">
+                      <span class="material-symbols-outlined fs-24 text-white">
+                        search
+                      </span>
+                      <a href="#" class="stretched-link"></a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 搜尋欄 end -->
       </div>
     </div>
 
