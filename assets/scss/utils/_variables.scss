@@ -329,6 +329,7 @@ $theme-colors: (
   "light": $light,
   "dark": $dark,
   "gray-300": $gray-300,  
+  "gray-400": $gray-400,  
   "gray-500": $gray-500,
   "gray-600": $gray-600,
   "gray-800": $gray-800,
@@ -924,7 +925,9 @@ $input-focus-width: $input-btn-focus-width !default;
 $input-focus-box-shadow: none !default;
 
 
-$input-placeholder-color: $gray-600 !default;
+// $input-placeholder-color: $gray-600 !default;
+$input-placeholder-color: $gray-400 !default;
+
 $input-plaintext-color: $body-color !default;
 
 $input-height-border: $input-border-width * 2 !default;
