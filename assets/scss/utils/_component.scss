@@ -7,6 +7,20 @@
     width: 60% !important;
 }
 
+.w-90{
+    width: 90%;
+}
+
+.navbar{
+    z-index: 1020 !important;
+}
+
+//hover
+.hover-danger{
+    &:hover{
+        color: $danger !important;
+    }
+}
 //  LOGO ----------------------------------------------------------------
 .logo {
     height: 40px;
@@ -71,7 +85,7 @@
             }
 
             &::-webkit-scrollbar {
-                width: 12px;
+                width: 10px;
                 background-color: $white;
             }
 

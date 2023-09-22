@@ -29,7 +29,7 @@
     <div class="bg-white">
       <div class="container">
         <!-- banner -->
-        <div class="mt-24 mb-32 my-md-40">
+        <div class="my-32">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators mb-8">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -59,8 +59,11 @@
             </button>
           </div>
         </div>
-        <!-- banner end -->
-        <!-- 搜尋欄 -->
+      </div>
+
+      <!-- banner end -->
+      <!-- 搜尋欄 -->
+      <div class="container">
         <div class="mb-32 mb-md-48">
           <div class="row justify-content-center align-items-center">
             <div class="col-10 col-md-6">
@@ -88,7 +91,8 @@
 
             <!-- 媒合按鈕-mobile -->
             <div class="col-2 d-md-none">
-              <div class="d-flex justify-content-center align-items-center text-center border rounded-16" style="width: 48px; height: 48px;">
+              <div class="d-flex justify-content-center align-items-center text-center border rounded-16"
+                style="width: 48px; height: 48px;">
                 <span class="material-symbols-outlined fs-32 mb-4">
                   tune
                 </span>
@@ -229,13 +233,45 @@
                 <div class="btn-height bg-gray-600">11</div>
                 <div class="btn-primary bg-gray-300 ps-16 pe-20 pt-16 pb-12">
                   <img class="me-4" src="../assets/images/icon-match.svg" alt="match" style="width: 24px;">
-                  <a href="#" class="stretched-link text-gray-800 fw-semibold">
+                  <a href="#" class="stretched-link text-gray-800 fw-semibold" data-bs-toggle="modal"
+                    data-bs-target="#matchModal">
                     媒合</a>
                 </div>
               </div>
             </div>
             <!-- 媒合按鈕 end-->
+
+
           </div>
+          <!-- 媒合互動式窗 -->
+          <!-- Modal -->
+          <div class="modal" id="matchModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+            aria-labelledby="matchModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title w-100 text-center fs-20" id="matchModal">媒合</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-40">
+                  111111
+                </div>
+                <div class="modal-footer justify-content-between px-8 px-md-16 py-16 py-md-24">
+                  <a href="#" class="text-gray-600 hover-danger">清除所有條件</a>
+                  <div class="w-40 position-relative ms-auto">
+                    <div class="btn-height bg-gray-600">11</div>
+                    <div class="btn-primary bg-gray-300 ps-16 pe-20 pt-16 pb-12">
+                      <img class="me-4" src="../assets/images/icon-match.svg" alt="match" style="width: 24px;">
+                      <a href="#" class="stretched-link text-gray-800 fw-semibold">
+                        開始媒合</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 媒合互動式窗 end-->
+
         </div>
         <!-- 分類 end-->
 
@@ -255,7 +291,7 @@
           slidesPerView: 3.6,
           breakpoints: {
             1440: {
-              slidesPerView: 9,
+              slidesPerView: 10,
             },
             992: {
               slidesPerView: 8,
