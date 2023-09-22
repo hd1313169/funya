@@ -22,19 +22,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-  <script type="module" crossorigin src="/funya/assets/main-7bf785fc.js"></script>
-  <link rel="stylesheet" href="/funya/assets/main-bf8a3d8f.css">
+  <script type="module" crossorigin src="/funya/assets/main-b86212ce.js"></script>
+  <link rel="stylesheet" href="/funya/assets/main-c939b306.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow shadow-1">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow shadow-1 position-sticky top-0">
     <div class="container-fluid px-16 px-md-40 py-16">
         <a class="navbar-brand" href="index.html"><img class="logo" src="/funya/assets/funya-logo-982b89b0.png" alt="#"></a>
 
         <!-- 行動版選單 -->
         <div class="d-lg-none ms-auto">
             <!-- 漢堡按鈕 Button trigger modal -->
-            <button type="button" class="border-0 bg-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="border-0 bg-white" data-bs-toggle="modal" data-bs-target="#menuModal">
                 <span class="material-symbols-outlined fs-40 text-dark">
                     <span class="material-symbols-outlined">
                         drag_handle
@@ -42,7 +42,7 @@
                 </span>
             </button>
             <!-- 展開選單 Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <div class="modal fade zindex-modal" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen">
                     <div class="modal-content">
@@ -89,7 +89,8 @@
                     <div class="position-relative">
                         <div class="btn-height bg-primary-dark">11</div>
                         <div class="btn-primary bg-primary ps-16 pe-20 pt-16 pb-12">
-                            <img class="me-4" src="/funya/assets/icon-holdEvent-57cc3bee.svg" alt="hold a evnet" style="width: 24px;">
+                            <img class="me-4" src="/funya/assets/icon-holdEvent-57cc3bee.svg" alt="hold a evnet"
+                                style="width: 24px;">
                             <a href="#" class="stretched-link text-white fw-semibold">我要揪團</a>
                         </div>
                     </div>
@@ -109,6 +110,7 @@
 
                 <!-- 我的通知 -->
                 <li class="nav-item position-relative me-md-40 px-12">
+                    <div class="nav-counter bg-danger">1</div>
                     <div class="dropdown">
                         <div class="dropdown-toggle d-flex flex-column jistify-content-center align-items-center"
                             role="button" id="dropdownNotify" data-bs-toggle="dropdown" aria-expanded="false">
@@ -125,115 +127,119 @@
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li
-                                class="ps-16 pe-8 py-8 d-flex justify-content-between align-items-center position-relative">
-                                <div class="d-flex align-items-start me-8">
-                                    <img class="rounded-circle me-16" src="/funya/assets/avatar-01-08aec75e.png"
-                                        alt="user image" style="width: 48px;">
+                            <!-- 通知類型：好友邀請 -->
+                            <li class="px-16 py-8 d-flex justify-content-between align-items-center position-relative">
+                                <div class="d-flex align-items-start w-90">
+                                    <a href="#"> <!-- 連結到發起者主頁 -->
+                                        <img class="rounded-circle me-16" src="/funya/assets/avatar-01-08aec75e.png"
+                                            alt="user image" style="width: 48px;">
+                                    </a>
                                     <div>
-                                        <p class="d-inline-block border border-dark rounded-8 fs-12 px-8 py-2 mb-4">書聚申請
+                                        <p class="d-inline-block border border-gray-600 rounded-8 fs-12 px-8 py-2 mb-4">
+                                            好友邀請
                                         </p>
-                                        <p class="mb-4">Alice Lioa 申請加入《如何改變一個人》書聚</p>
+                                        <p class="mb-8">Alex Lioa 對你發出好友邀請</p>
+                                        <div class="d-flex mb-8">
+                                            <a href="#"
+                                                class="d-block bg-primary px-16 py-8 rounded-8 fs-14 text-white text-center me-8">加好友</a>
+                                            <a href="#"
+                                                class="d-block bg-white px-16 py-8 border border-gray-600 rounded-8 fs-14 text-dark text-center">略過</a>
+                                        </div>
                                         <p class="fs-12 text-gray-600">4小時前</p>
                                     </div>
                                 </div>
                                 <div class="dropdown-menu-notify-newLabel bg-secondary rounded-circle"></div>
-                                <a href="#" class="stretched-link"></a>
                             </li>
-                            <li
-                                class="ps-16 pe-8 py-8 d-flex justify-content-between align-items-center position-relative">
-                                <div class="d-flex align-items-start me-8">
-                                    <img class="rounded-circle me-16" src="/funya/assets/avatar-02-8b9616a3.png"
-                                        alt="user image" style="width: 48px;">
-                                    <div>
-                                        <p class="d-inline-block border border-dark rounded-8 fs-12 px-8 py-2 mb-4">書聚申請
+                            <!-- 通知類型：好友邀請 end -->
+
+                            <!-- 通知類型：書聚申請 -->
+                            <li class="px-16 py-8 d-flex justify-content-between align-items-center position-relative">
+                                <div class="d-flex align-items-start w-90">
+                                    <a href="#" class="me-16"> <!-- 連結到發起者主頁 -->
+                                        <img class="rounded-circle" src="/funya/assets/avatar-02-8b9616a3.png"
+                                            alt="user image" style="width: 48px;">
+                                    </a>
+                                    <a href="#">
+                                        <p
+                                            class="d-inline-block border border-dark rounded-8 fs-12  text-dark px-8 py-2 mb-4">
+                                            書聚申請
                                         </p>
-                                        <p class="mb-4">Alice Lioa 申請加入《如何改變一個人》書聚</p>
+                                        <p class="d-block mb-4 text-dark">Alice Lioa
+                                            申請加入《如何改變一個人：華頓商學院教你消除抗拒心理，從心擁抱改變》書聚</p>
+                                        <p class="fs-12 text-gray-600">4小時前</p>
+                                    </a>
+                                </div>
+                                <div class="dropdown-menu-notify-newLabel bg-secondary rounded-circle"></div>
+                            </li>
+                            <!-- 通知類型：書聚申請 end -->
+                            <!-- 通知類型：好友邀請 -->
+                            <li class="px-16 py-8 d-flex justify-content-between align-items-center position-relative">
+                                <div class="d-flex align-items-start w-90">
+                                    <a href="#"> <!-- 連結到發起者主頁 -->
+                                        <img class="rounded-circle me-16" src="/funya/assets/avatar-03-16b35660.png"
+                                            alt="user image" style="width: 48px;">
+                                    </a>
+                                    <div>
+                                        <p class="d-inline-block border border-gray-600 rounded-8 fs-12 px-8 py-2 mb-4">
+                                            好友邀請
+                                        </p>
+                                        <p class="mb-8">Alice Lioa 對你發出好友邀請</p>
+                                        <div class="d-flex mb-8">
+                                            <a href="#"
+                                                class="d-block bg-primary px-16 py-8 rounded-8 fs-14 text-white text-center me-8">加好友</a>
+                                            <a href="#"
+                                                class="d-block bg-white px-16 py-8 border border-gray-600 rounded-8 fs-14 text-dark text-center">略過</a>
+                                        </div>
                                         <p class="fs-12 text-gray-600">4小時前</p>
                                     </div>
                                 </div>
                                 <div class="dropdown-menu-notify-newLabel bg-secondary rounded-circle"></div>
-                                <a href="#" class="stretched-link"></a>
                             </li>
-                            <li
-                                class="ps-16 pe-8 py-8 d-flex justify-content-between align-items-center position-relative">
-                                <div class="d-flex align-items-start me-8">
-                                    <img class="rounded-circle me-16" src="/funya/assets/avatar-03-16b35660.png"
-                                        alt="user image" style="width: 48px;">
-                                    <div>
-                                        <p class="d-inline-block border border-dark rounded-8 fs-12 px-8 py-2 mb-4">書聚申請
+                            <!-- 通知類型：好友邀請 end -->
+
+                            <!-- 通知類型：書聚申請 -->
+                            <li class="px-16 py-8 d-flex justify-content-between align-items-center position-relative">
+                                <div class="d-flex align-items-start w-90">
+                                    <a href="#" class="me-16"> <!-- 連結到發起者主頁 -->
+                                        <img class="rounded-circle" src="/funya/assets/avatar-04-a1f6f95b.png"
+                                            alt="user image" style="width: 48px;">
+                                    </a>
+                                    <a href="#">
+                                        <p
+                                            class="d-inline-block border border-dark rounded-8 fs-12  text-dark px-8 py-2 mb-4">
+                                            書聚申請
                                         </p>
-                                        <p class="mb-4">Alice Lioa 申請加入《如何改變一個人》書聚</p>
+                                        <p class="d-block mb-4 text-dark">Alice Lioa
+                                            申請加入《如何改變一個人：華頓商學院教你消除抗拒心理，從心擁抱改變》書聚</p>
                                         <p class="fs-12 text-gray-600">4小時前</p>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="dropdown-menu-notify-newLabel bg-secondary rounded-circle"></div>
-                                <a href="#" class="stretched-link"></a>
                             </li>
-                            <li
-                                class="ps-16 pe-8 py-8 d-flex justify-content-between align-items-center position-relative">
-                                <div class="d-flex align-items-start me-8">
-                                    <img class="rounded-circle me-16" src="/funya/assets/avatar-04-a1f6f95b.png"
-                                        alt="user image" style="width: 48px;">
-                                    <div>
-                                        <p class="d-inline-block border border-dark rounded-8 fs-12 px-8 py-2 mb-4">書聚申請
+                            <!-- 通知類型：書聚申請 end -->
+
+                            <!-- 通知類型：書聚申請 -->
+                            <li class="px-16 py-8 d-flex justify-content-between align-items-center position-relative">
+                                <div class="d-flex align-items-start w-90">
+                                    <a href="#" class="me-16"> <!-- 連結到發起者主頁 -->
+                                        <img class="rounded-circle" src="/funya/assets/avatar-05-327c52ff.png"
+                                            alt="user image" style="width: 48px;">
+                                    </a>
+                                    <a href="#">
+                                        <p
+                                            class="d-inline-block border border-dark rounded-8 fs-12  text-dark px-8 py-2 mb-4">
+                                            書聚申請
                                         </p>
-                                        <p class="mb-4">Alice Lioa 申請加入《如何改變一個人》書聚</p>
+                                        <p class="d-block mb-4 text-dark">Alice Lioa
+                                            申請加入《如何改變一個人：華頓商學院教你消除抗拒心理，從心擁抱改變》書聚</p>
                                         <p class="fs-12 text-gray-600">4小時前</p>
-                                    </div>
+                                    </a>
                                 </div>
-                                <div class="dropdown-menu-notify-newLabel bg-secondary rounded-circle"></div>
-                                <a href="#" class="stretched-link"></a>
+                                <div class="dropdown-menu-notify-newLabel bg-secondary rounded-circle d-none"></div>
                             </li>
-                            <li
-                                class="ps-16 pe-8 py-8 d-flex justify-content-between align-items-center position-relative">
-                                <div class="d-flex align-items-start me-8">
-                                    <img class="rounded-circle me-16" src="/funya/assets/avatar-05-327c52ff.png"
-                                        alt="user image" style="width: 48px;">
-                                    <div>
-                                        <p class="d-inline-block border border-dark rounded-8 fs-12 px-8 py-2 mb-4">書聚申請
-                                        </p>
-                                        <p class="mb-4">Alice Lioa 申請加入《如何改變一個人》書聚</p>
-                                        <p class="fs-12 text-gray-600">4小時前</p>
-                                    </div>
-                                </div>
-                                <div class="dropdown-menu-notify-newLabel bg-secondary rounded-circle"></div>
-                                <a href="#" class="stretched-link"></a>
-                            </li>
-                            <li
-                                class="ps-16 pe-8 py-8 d-flex justify-content-between align-items-center position-relative">
-                                <div class="d-flex align-items-start me-8">
-                                    <img class="rounded-circle me-16" src="/funya/assets/avatar-01-08aec75e.png"
-                                        alt="user image" style="width: 48px;">
-                                    <div>
-                                        <p class="d-inline-block border border-dark rounded-8 fs-12 px-8 py-2 mb-4">書聚申請
-                                        </p>
-                                        <p class="mb-4">Alice Lioa 申請加入《如何改變一個人》書聚</p>
-                                        <p class="fs-12 text-gray-600">4小時前</p>
-                                    </div>
-                                </div>
-                                <div class="dropdown-menu-notify-newLabel bg-secondary rounded-circle"></div>
-                                <a href="#" class="stretched-link"></a>
-                            </li>
-                            <li
-                                class="ps-16 pe-8 py-8 d-flex justify-content-between align-items-center position-relative">
-                                <div class="d-flex align-items-start me-8">
-                                    <img class="rounded-circle me-16" src="/funya/assets/avatar-02-8b9616a3.png"
-                                        alt="user image" style="width: 48px;">
-                                    <div>
-                                        <p class="d-inline-block border border-dark rounded-8 fs-12 px-8 py-2 mb-4">書聚申請
-                                        </p>
-                                        <p class="mb-4">Alice Lioa 申請加入《如何改變一個人》書聚ssssss</p>
-                                        <p class="fs-12 text-gray-600">4小時前</p>
-                                    </div>
-                                </div>
-                                <div class="dropdown-menu-notify-newLabel bg-secondary rounded-circle"></div>
-                                <a href="#" class="stretched-link"></a>
-                            </li>
+                            <!-- 通知類型：書聚申請 end -->
                         </ul>
                     </div>
-                    <div class="nav-counter bg-danger">1</div>
-
                 </li>
 
                 <!-- 個人專區 -->
@@ -266,7 +272,7 @@
 </nav>    <div class="bg-white">
       <div class="container">
         <!-- banner -->
-        <div class="mt-24 mb-32 my-md-40">
+        <div class="my-32">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators mb-8">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -296,8 +302,11 @@
             </button>
           </div>
         </div>
-        <!-- banner end -->
-        <!-- 搜尋欄 -->
+      </div>
+
+      <!-- banner end -->
+      <!-- 搜尋欄 -->
+      <div class="container">
         <div class="mb-32 mb-md-48">
           <div class="row justify-content-center align-items-center">
             <div class="col-10 col-md-6">
@@ -325,7 +334,8 @@
 
             <!-- 媒合按鈕-mobile -->
             <div class="col-2 d-md-none">
-              <div class="d-flex justify-content-center align-items-center text-center border rounded-16" style="width: 48px; height: 48px;">
+              <div class="d-flex justify-content-center align-items-center text-center border rounded-16"
+                style="width: 48px; height: 48px;">
                 <span class="material-symbols-outlined fs-32 mb-4">
                   tune
                 </span>
@@ -466,13 +476,45 @@
                 <div class="btn-height bg-gray-600">11</div>
                 <div class="btn-primary bg-gray-300 ps-16 pe-20 pt-16 pb-12">
                   <img class="me-4" src="/funya/assets/icon-match-c37ed6e2.svg" alt="match" style="width: 24px;">
-                  <a href="#" class="stretched-link text-gray-800 fw-semibold">
+                  <a href="#" class="stretched-link text-gray-800 fw-semibold" data-bs-toggle="modal"
+                    data-bs-target="#matchModal">
                     媒合</a>
                 </div>
               </div>
             </div>
             <!-- 媒合按鈕 end-->
+
+
           </div>
+          <!-- 媒合互動式窗 -->
+          <!-- Modal -->
+          <div class="modal" id="matchModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+            aria-labelledby="matchModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title w-100 text-center fs-20" id="matchModal">媒合</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-40">
+                  111111
+                </div>
+                <div class="modal-footer justify-content-between px-8 px-md-16 py-16 py-md-24">
+                  <a href="#" class="text-gray-600 hover-danger">清除所有條件</a>
+                  <div class="w-40 position-relative ms-auto">
+                    <div class="btn-height bg-gray-600">11</div>
+                    <div class="btn-primary bg-gray-300 ps-16 pe-20 pt-16 pb-12">
+                      <img class="me-4" src="/funya/assets/icon-match-c37ed6e2.svg" alt="match" style="width: 24px;">
+                      <a href="#" class="stretched-link text-gray-800 fw-semibold">
+                        開始媒合</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 媒合互動式窗 end-->
+
         </div>
         <!-- 分類 end-->
 
@@ -524,7 +566,7 @@
           slidesPerView: 3.6,
           breakpoints: {
             1440: {
-              slidesPerView: 9,
+              slidesPerView: 10,
             },
             992: {
               slidesPerView: 8,
