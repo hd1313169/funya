@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about</title>
-    <script type="module" crossorigin src="/funya/assets/main-06001dcc.js"></script>
-    <link rel="stylesheet" href="/funya/assets/main-c00b4ce8.css">
+    <script type="module" crossorigin src="/funya/assets/main-425fda63.js"></script>
+    <link rel="stylesheet" href="/funya/assets/main-7f617084.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow shadow-1">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow shadow-1">
     <div class="container-fluid px-16 px-md-40 py-16">
         <a class="navbar-brand" href="index.html"><img class="logo" src="/funya/assets/funya-logo-982b89b0.png" alt="#"></a>
 
+
         <!-- 行動版選單 -->
+
         <div class="d-lg-none ms-auto">
             <!-- 漢堡按鈕 Button trigger modal -->
-            <button type="button" class="border-0 bg-white" data-bs-toggle="modal" data-bs-target="#menuModal">
+            <button type="button" class="border-0 bg-white" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas">
                 <span class="material-symbols-outlined fs-40 text-dark">
                     <span class="material-symbols-outlined">
                         drag_handle
@@ -24,7 +26,48 @@
                 </span>
             </button>
             <!-- 展開選單 Modal -->
-            <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel"
+            <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="menuOffcanvas"
+                aria-labelledby="menuOffcanvasLabel">
+                <div class="offcanvas-header border-0 mb-40">
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body mx-auto d-flex flex-column justify-content-between">
+                    <ul class="m-0 p-0">
+                        <li class="text-center mb-24"> <img class="nav-img mx-auto" src="/funya/assets/avatar-01-08aec75e.png"
+                                alt="user ">
+                        </li>
+                        <li class="mb-24"><a class="dropdown-item text-center" href="#">
+                                <img src="/funya/assets/icon-user-66928f4d.svg" alt="user info">我的資料</a></li>
+                        <li class="mb-24"><a class="dropdown-item text-center" href="#">
+                                <img src="/funya/assets/icon-mission-7e6420ca.svg" alt="mission">我的任務</a></li>
+                        <li class="mb-40"><a class="dropdown-item text-center" href="#">
+                                <img src="/funya/assets/icon-personal-d4e4d743.svg" alt="personal book club">我的書屋</a>
+                        </li>
+                        <li>
+                            <div class="position-relative">
+                                <div class="btn-height bg-primary-dark">11</div>
+                                <div class="btn-primary bg-primary ps-16 pe-20 pt-12 pb-8">
+                                    <img class="me-8" src="/funya/assets/icon-holdEvent-57cc3bee.svg" alt="hold a evnet">
+                                    <a href="#" class="stretched-link text-white">我要揪團</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="text-center justify-content-center">
+                        <a class="text-danger" href="#">登出</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 漢堡按鈕 Button trigger modal -->
+            <!-- <button type="button" class="border-0 bg-white" data-bs-toggle="modal" data-bs-target="#menuModal">
+                <span class="material-symbols-outlined fs-40 text-dark">
+                    <span class="material-symbols-outlined">
+                        drag_handle
+                    </span>
+                </span>
+            </button> -->
+            <!-- 展開選單 Modal -->
+            <!-- <div class="modal fade menuModal" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen">
                     <div class="modal-content">
@@ -34,20 +77,20 @@
                         <div class="modal-body mx-auto">
                             <ul class="m-0 p-0">
                                 <li class="text-center mb-24"> <img class="nav-img mx-auto"
-                                        src="/funya/assets/avatar-01-08aec75e.png" alt="user ">
+                                        src="../assets/images/avatar-01.png" alt="user ">
                                 </li>
                                 <li class="mb-24"><a class="dropdown-item text-center" href="#">
-                                        <img src="/funya/assets/icon-user-66928f4d.svg" alt="user info">我的資料</a></li>
+                                        <img src="../assets/images/icon-user.svg" alt="user info">我的資料</a></li>
                                 <li class="mb-24"><a class="dropdown-item text-center" href="#">
-                                        <img src="/funya/assets/icon-mission-7e6420ca.svg" alt="mission">我的任務</a></li>
+                                        <img src="../assets/images/icon-mission.svg" alt="mission">我的任務</a></li>
                                 <li class="mb-40"><a class="dropdown-item text-center" href="#">
-                                        <img src="/funya/assets/icon-personal-d4e4d743.svg" alt="personal book club">我的書屋</a>
+                                        <img src="../assets/images/icon-personal.svg" alt="personal book club">我的書屋</a>
                                 </li>
                                 <li>
                                     <div class="position-relative">
                                         <div class="btn-height bg-primary-dark">11</div>
                                         <div class="btn-primary bg-primary ps-16 pe-20 pt-12 pb-8">
-                                            <img class="me-8" src="/funya/assets/icon-holdEvent-57cc3bee.svg"
+                                            <img class="me-8" src="../assets/images/icon-holdEvent.svg"
                                                 alt="hold a evnet">
                                             <a href="#" class="stretched-link text-white">我要揪團</a>
                                         </div>
@@ -60,11 +103,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
-        <div>
 
-            <!-- 電腦版選單 -->
+        <!-- 電腦版選單 -->
+        <div>
             <ul class="navbar-nav ms-auto align-items-center d-none d-lg-flex flex-row">
                 <!-- 主按鈕 -->
                 <li class="nav-item me-md-40">
