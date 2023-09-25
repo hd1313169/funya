@@ -295,16 +295,16 @@ $cyans: (
 // $danger:        $red !default;
 // $light:         $gray-100 !default;
 // $dark:          $gray-900 !default;
-$primary:         #33A04D !default;
-$primary-light:   #6AD082 !default;
-$primary-dark:    #1D6C30 !default;
-$secondary:       #FF9518 !default;
+$primary: #33A04D !default;
+$primary-light: #6AD082 !default;
+$primary-dark: #1D6C30 !default;
+$secondary: #FF9518 !default;
 $secondary-light: #FAE7D0 !default;
-$secondary-dark:  #946846 !default;
-$success:         #62A6F4 !default;
-$info:            #6AD082 !default;
-$warning:         #FFE500 !default;
-$danger:          #F96868 !default;
+$secondary-dark: #946846 !default;
+$success: #62A6F4 !default;
+$info: #6AD082 !default;
+$warning: #FFE500 !default;
+$danger: #F96868 !default;
 $light: $gray-100 !default;
 $dark: $gray-900 !default;
 $gray-300: $gray-300 !default;
@@ -328,8 +328,8 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "dark": $dark,
-  "gray-300": $gray-300,  
-  "gray-400": $gray-400,  
+  "gray-300": $gray-300,
+  "gray-400": $gray-400,
   "gray-500": $gray-500,
   "gray-600": $gray-600,
   "gray-800": $gray-800,
@@ -422,6 +422,7 @@ $spacers: (
   144: $spacer * 9,
   160: $spacer * 10,
   216: $spacer * 13.5,
+  240: $spacer * 15,
   320: $spacer * 20,
   ) !default;
 // scss-docs-end spacer-variables-maps
@@ -449,10 +450,10 @@ $body-text-align: null !default;
 //
 // Style anchor elements.
 
-$link-color: $dark !default;//$primary !default;
-$link-decoration: none !default;//underline !default;
+$link-color: $dark !default; //$primary !default;
+$link-decoration: none !default; //underline !default;
 $link-shade-percentage: 20% !default;
-$link-hover-color: $primary !default;//shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-color: $primary !default; //shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration: null !default;
 
 $stretched-link-pseudo-element: after !default;
@@ -583,7 +584,9 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: 'Niramit', 'Noto Sans TC', system-ui,
+$font-family-sans-serif: 'Niramit',
+  'Noto Sans TC',
+  system-ui,
   -apple-system,
   "Segoe UI",
   Roboto,
@@ -1174,7 +1177,7 @@ $nav-pills-link-active-bg: $component-active-bg !default;
 // Navbar
 
 // scss-docs-start navbar-variables
-$navbar-padding-y: 0;//$spacer * .5 !default;
+$navbar-padding-y: 0; //$spacer * .5 !default;
 $navbar-padding-x: null !default;
 
 $navbar-nav-link-padding-x: .5rem !default;
