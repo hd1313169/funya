@@ -31,7 +31,6 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
   <link rel='stylesheet'
     href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css'>
-
 </head>
 
 <body>
@@ -40,35 +39,36 @@
       <div class="container">
         <!-- banner -->
         <div class="my-32">
-          <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators mb-8">
-              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
+          <!-- banner Swiper -->
+          <div class="swiper bannerSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
                 <img src="../assets/images/banner-01.png" class="d-none d-md-block w-100 rounded-16" alt="banner">
                 <img src="../assets/images/banner-01-mobile.png" class="d-md-none w-100 rounded-16" alt="banner">
                 <a href="#" class="stretched-link"></a>
               </div>
-              <div class="carousel-item rounded-16">
+              <div class="swiper-slide">
                 <img src="../assets/images/banner-02.png" class="d-none d-md-block w-100 rounded-16" alt="banner">
                 <img src="../assets/images/banner-02-mobile.png" class="d-md-none w-100 rounded-16" alt="banner">
                 <a href="#" class="stretched-link"></a>
               </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/banner-03.png" class="d-none d-md-block w-100 rounded-16" alt="banner">
+                <img src="../assets/images/banner-03-mobile.png" class="d-md-none w-100 rounded-16" alt="banner">
+                <a href="#" class="stretched-link"></a>
+              </div>
             </div>
-            <button class="carousel-control-prev justify-content-start ps-16" type="button"
-              data-bs-target="#carouselIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true" style="width: 24px;"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next justify-content-end pe-16" type="button"
-              data-bs-target="#carouselIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true" style="width: 24px;"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="swiper-pagination text-white mb-4 mb-md-16"></div>
+            <div class="swiper-button-next">
+              <span class="material-symbols-outlined fs-32 text-white me-2 me-md-8">
+                arrow_forward_ios
+              </span>
+            </div>
+            <div class="swiper-button-prev">
+              <span class="material-symbols-outlined fs-32 text-white ms-2 ms-md-8">
+                arrow_back_ios_new
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -111,7 +111,7 @@
       <!-- 分類 -->
       <div class="mb-40 bg-white">
         <div class="container">
-          <div class="row align-items-center justify-content-between">
+          <div class="row align-items-center">
             <div class="col-10 col-md-9 col-lg-10">
               <div class="d-flex align-items-center">
                 <!-- 分類 swiper -->
@@ -243,14 +243,17 @@
                 </div>
               </div>
               <div class="d-md-none">
-                <div class="d-flex justify-content-center align-items-center text-center border rounded-8"
+                <a href="#" class="stretched-link text-gray-800" data-bs-toggle="modal" data-bs-target="#matchModal">
+                  <span class="material-symbols-outlined fs-32">
+                    tune
+                  </span></a>
+                <!-- <div class="d-flex justify-content-center align-items-center text-center border rounded-8"
                   style="width: 40px;height: 40px;">
                   <a href="#" class="stretched-link text-gray-800" data-bs-toggle="modal" data-bs-target="#matchModal">
-                    <span class="material-symbols-outlined fs-32 align-middle">
+                    <span class="material-symbols-outlined fs-32">
                       tune
                     </span></a>
-
-                </div>
+                </div> -->
               </div>
             </div>
             <!-- 媒合按鈕 end-->
@@ -947,12 +950,28 @@
 
       <script type="module" src="../main.js"></script>
 
+      <!-- banner swiper -->
+      <script>
+        var bannerSwiper = new Swiper(".bannerSwiper", {
+          slidesPerView: 1,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
       <!-- 分類swiper -->
       <script>
         const swiper = new Swiper(".classicSwiper", {
           // slide 間距
           spaceBetween: 16,
-          slidesPerView: 3.3,
+          slidesPerView: 2.6,
           breakpoints: {
             1440: {
               slidesPerView: 10,
@@ -965,6 +984,9 @@
             },
             440: {
               slidesPerView: 3.8,
+            },
+            400: {
+              slidesPerView: 3.4,
             },
           },
           // navigation

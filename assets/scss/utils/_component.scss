@@ -225,7 +225,16 @@
     }
 }
 
-
+// banner swiper
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    content: "";
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    content: "";
+}
+.swiper-pagination-bullet-active-main{
+    background: $white !important;
+}
 //媒合
 .match {
     &-muti {
@@ -330,6 +339,7 @@
         &:focus{
             box-shadow: none !important;
         }
+
         &:active {
             transform: translate(0, 4px);
         }
