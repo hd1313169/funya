@@ -1,3 +1,7 @@
+// 連結
+a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover{
+    background-color: $primary !important;
+}
 // 圖片
 .fit-contain {
     object-fit: contain !important;
@@ -37,6 +41,12 @@
 .hover-gray-800 {
     &:hover {
         color: $gray-800 !important;
+    }
+}
+
+.hover-bg-primary-dark{
+    &:hover {
+        background: $primary-dark !important;
     }
 }
 
