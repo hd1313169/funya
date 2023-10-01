@@ -546,3 +546,10 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
         }
     }
 }
+
+.bg-test{
+    background-image: url(../../images/bg-signIn-test.svg);
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
