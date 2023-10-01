@@ -32,11 +32,147 @@
   <link rel='stylesheet'
     href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css'>
 </head>
-  <body>
-    <%- include('./layout/header'); -%>
-    <h1>我是contact</h1>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <div class="bg-light my-40">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-6">
+            <div class="bg-white border rounded-24 p-24 p-lg-40">
+
+              <h2 class="mb-24">通知</h2>
+
+              <div class="d-flex justify-content-between align-items-center mb-40">
+                <div class="d-flex">
+                  <a href="#" class="d-block bg-primary px-16 py-8 rounded-8 text-white text-center me-8">全部</a>
+                  <a href="#"
+                    class="d-block bg-white px-16 py-8 border border-gray-600 rounded-8 text-dark text-center">未讀</a>
+                </div>
+                <a href="#">全部標示已讀</a>
+              </div>
+
+              <ul class="m-0 p-0">
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <!-- 通知類型：好友邀請 -->
+                <li class="py-12 d-flex justify-content-between align-items-center position-relative">
+                  <div class="d-flex align-items-start w-90">
+                    <a href="#"> <!-- 連結到發起者主頁 -->
+                      <img class="rounded-circle me-16" src="../assets/images/avatar-01.png" alt="user image"
+                        style="width: 48px;">
+                    </a>
+                    <div>
+                      <p class="d-inline-block border border-gray-600 rounded-8 fs-12 px-8 py-2 mb-4">
+                        好友邀請
+                      </p>
+                      <p class="mb-8">Alex Lioa 對你發出好友邀請</p>
+                      <div class="d-flex mb-8">
+                        <a href="#"
+                          class="d-block bg-primary px-16 py-8 rounded-8 fs-14 text-white text-center me-8">加好友</a>
+                        <a href="#"
+                          class="d-block bg-white px-16 py-8 border border-gray-600 rounded-8 fs-14 text-dark text-center">略過</a>
+                      </div>
+                      <p class="fs-12 text-gray-600">4小時前</p>
+                    </div>
+                  </div>
+                  <div class="dropdown-menu-notify-newLabel bg-secondary rounded-circle"></div>
+                </li>
+                <!-- 通知類型：好友邀請 end -->
+
+                <!-- 通知類型：書聚申請 -->
+                <li class="py-12 d-flex justify-content-between align-items-center position-relative">
+                  <div class="d-flex align-items-start w-90">
+                    <a href="#" class="me-16"> <!-- 連結到發起者主頁 -->
+                      <img class="rounded-circle" src="../assets/images/avatar-02.png" alt="user image"
+                        style="width: 48px;">
+                    </a>
+                    <a href="#">
+                      <p class="d-inline-block border border-dark rounded-8 fs-12  text-dark px-8 py-2 mb-4">
+                        書聚申請
+                      </p>
+                      <p class="d-block mb-4 text-dark">Alice Lioa
+                        申請加入《如何改變一個人：華頓商學院教你消除抗拒心理，從心擁抱改變》書聚</p>
+                      <p class="fs-12 text-gray-600">4小時前</p>
+                    </a>
+                  </div>
+                  <div class="dropdown-menu-notify-newLabel bg-secondary rounded-circle"></div>
+                </li>
+                <!-- 通知類型：書聚申請 end -->
+                <!-- 通知類型：好友邀請 -->
+                <li class="py-12 d-flex justify-content-between align-items-center position-relative">
+                  <div class="d-flex align-items-start w-90">
+                    <a href="#"> <!-- 連結到發起者主頁 -->
+                      <img class="rounded-circle me-16" src="../assets/images/avatar-03.png" alt="user image"
+                        style="width: 48px;">
+                    </a>
+                    <div>
+                      <p class="d-inline-block border border-gray-600 rounded-8 fs-12 px-8 py-2 mb-4">
+                        好友邀請
+                      </p>
+                      <p class="mb-8">Alice Lioa 對你發出好友邀請</p>
+                      <div class="d-flex mb-8">
+                        <a href="#"
+                          class="d-block bg-primary px-16 py-8 rounded-8 fs-14 text-white text-center me-8">加好友</a>
+                        <a href="#"
+                          class="d-block bg-white px-16 py-8 border border-gray-600 rounded-8 fs-14 text-dark text-center">略過</a>
+                      </div>
+                      <p class="fs-12 text-gray-600">4小時前</p>
+                    </div>
+                  </div>
+                  <div class="dropdown-menu-notify-newLabel bg-secondary rounded-circle"></div>
+                </li>
+                <!-- 通知類型：好友邀請 end -->
+
+                <!-- 通知類型：書聚申請 -->
+                <li class="py-12 d-flex justify-content-between align-items-center position-relative">
+                  <div class="d-flex align-items-start w-90">
+                    <a href="#" class="me-16"> <!-- 連結到發起者主頁 -->
+                      <img class="rounded-circle" src="../assets/images/avatar-04.png" alt="user image"
+                        style="width: 48px;">
+                    </a>
+                    <a href="#">
+                      <p class="d-inline-block border border-dark rounded-8 fs-12  text-dark px-8 py-2 mb-4">
+                        書聚申請
+                      </p>
+                      <p class="d-block mb-4 text-dark">Alice Lioa
+                        申請加入《如何改變一個人：華頓商學院教你消除抗拒心理，從心擁抱改變》書聚</p>
+                      <p class="fs-12 text-gray-600">4小時前</p>
+                    </a>
+                  </div>
+                  <div class="dropdown-menu-notify-newLabel bg-secondary rounded-circle"></div>
+                </li>
+                <!-- 通知類型：書聚申請 end -->
+
+                <!-- 通知類型：書聚申請 -->
+                <li class="py-12 d-flex justify-content-between align-items-center position-relative">
+                  <div class="d-flex align-items-start w-90">
+                    <a href="#" class="me-16"> <!-- 連結到發起者主頁 -->
+                      <img class="rounded-circle" src="../assets/images/avatar-05.png" alt="user image"
+                        style="width: 48px;">
+                    </a>
+                    <a href="#">
+                      <p class="d-inline-block border border-dark rounded-8 fs-12  text-dark px-8 py-2 mb-4">
+                        書聚申請
+                      </p>
+                      <p class="d-block mb-4 text-dark">Alice Lioa
+                        申請加入《如何改變一個人：華頓商學院教你消除抗拒心理，從心擁抱改變》書聚</p>
+                      <p class="fs-12 text-gray-600">4小時前</p>
+                    </a>
+                  </div>
+                  <div class="dropdown-menu-notify-newLabel bg-secondary rounded-circle d-none"></div>
+                </li>
+                <!-- 通知類型：書聚申請 end -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>
