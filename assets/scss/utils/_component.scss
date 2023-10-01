@@ -1,14 +1,18 @@
 // 連結
-a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover{
+a.bg-primary:focus,
+a.bg-primary:hover,
+button.bg-primary:focus,
+button.bg-primary:hover {
     background-color: $primary !important;
 }
+
 // 圖片
 .fit-contain {
     object-fit: contain !important;
 }
 
 //漸層
-.bg-linear-light{
+.bg-linear-light {
     background: linear-gradient(to bottom, $white 0%, $secondary-light 100%);
 }
 
@@ -20,8 +24,9 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 .w-60 {
     width: 60% !important;
 }
-.w-md-60{
-    @include medium{
+
+.w-sm-60 {
+    @include small {
         width: 60% !important;
     }
 }
@@ -49,7 +54,7 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
     }
 }
 
-.hover-bg-primary-dark{
+.hover-bg-primary-dark {
     &:hover {
         background: $primary-dark !important;
     }
@@ -245,15 +250,20 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 }
 
 // banner swiper
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
     content: "";
 }
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
     content: "";
 }
-.swiper-pagination-bullet-active-main{
+
+.swiper-pagination-bullet-active-main {
     background: $white !important;
 }
+
 //媒合
 .match {
     &-muti {
@@ -336,17 +346,17 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 }
 
 // 分頁頁籤
-.page{
-    &-item{
+.page {
+    &-item {
         position: relative;
         margin-right: 8px;
 
-        .active
-        &:last-child{
+        .active &:last-child {
             margin-right: 0;
         }
     }
-    &-link{
+
+    &-link {
         padding: 12px 16px !important;
         background: $gray-300 !important;
         color: $gray-800 !important;
@@ -355,7 +365,7 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
         font-size: 14px !important;
         font-weight: 500 !important;
 
-        &:focus{
+        &:focus {
             box-shadow: none !important;
         }
 
@@ -377,7 +387,8 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 
 
 }
-.page-item.active .page-link{
+
+.page-item.active .page-link {
     border: none !important;
     background: $primary !important;
     color: $white !important;
@@ -386,6 +397,7 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
         background: $primary-dark !important;
     }
 }
+
 // time picker
 .time {
     cursor: pointer;
@@ -538,18 +550,23 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
     width: 100%;
 }
 
-.member{
-    &-item{
-        &-icon{
+.member {
+    &-item {
+        &-icon {
             width: 24px !important;
             height: 24px !important;
         }
     }
 }
 
-.bg-test{
-    background-image: url(../../images/bg-signIn-test.svg);
-    background-size: contain;
-    background-position: 0 0;
-    background-repeat: no-repeat;
+.bg-signIn {
+    background-color: white;
+
+    @include medium {
+        background-image: url(https://raw.githubusercontent.com/hd1313169/funya/27ea1e476e389364efc4b83b728308d476e13309/assets/images/bg-signIn-test.svg);
+        background-size: cover;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+    }
+
 }
