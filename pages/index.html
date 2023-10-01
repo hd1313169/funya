@@ -221,7 +221,8 @@
                 <!-- 控制-向右 -->
                 <div class="position-relative ms-24">
                   <div class="swiper-button-forward">
-                    <a href="#" class=" bg-gray-300 rounded-circle d-flex justify-content-center align-items-center p-8">
+                    <a href="#"
+                      class=" bg-gray-300 rounded-circle d-flex justify-content-center align-items-center p-8">
                       <span class="material-symbols-outlined text-gray-600 fs-12 align-middle">
                         arrow_forward_ios
                       </span>
@@ -431,10 +432,23 @@
 
                 <!-- 媒合-時段 -->
                 <div class="mb-40">
-                  <p class="fs-20 fw-semibold mb-8">時段</p>
+                  <p class="fs-20 fw-semibold mb-16">時段</p>
                   <div class="match-date">
+                    <div class="d-flex justify-content-between mb-4">
+                      <p class="fw-semibold">第 1 次書聚時間</p>
+                      <div class="d-flex">
+                        <a href="#" class="me-16 text-gray-500 hover-gray-800"><span class="material-symbols-outlined">
+                            add
+                          </span></a>
+                        <a href="#" class="text-gray-500 hover-gray-800">
+                          <span class="material-symbols-outlined">
+                            remove
+                          </span>
+                        </a>
+                      </div>
+                    </div>
                     <div class="row align-items-center">
-                      <div class="col-3">
+                      <div class="col-4">
                         <ul class="m-0 p-0">
                           <li>
                             <select class="form-select border px-12 py-8" aria-label="Default select example">
@@ -447,7 +461,7 @@
                               <option value="星期日">星期日</option>
                             </select>
                       </div>
-                      <div class="col-7">
+                      <div class="col-8">
                         <div class="d-flex justify-content-between border rounded-8">
                           <!-- 開始時間 -->
                           <div class="input-group time h-100" id="timepicker-start">
@@ -475,7 +489,7 @@
                           <!-- 結束時間 end-->
                         </div>
                       </div>
-                      <div class="col-2">
+                      <!-- <div class="col-2">
                         <div class="d-flex">
                           <a href="#" class="me-16 text-gray-500 hover-gray-800"><span
                               class="material-symbols-outlined">
@@ -487,7 +501,7 @@
                             </span>
                           </a>
                         </div>
-                      </div>
+                      </div> -->
                       </li>
                       </ul>
                     </div>
