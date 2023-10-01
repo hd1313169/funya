@@ -20,6 +20,11 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 .w-60 {
     width: 60% !important;
 }
+.w-md-60{
+    @include medium{
+        width: 60% !important;
+    }
+}
 
 .w-90 {
     width: 90%;
@@ -531,4 +536,13 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
     line-height: 40px;
     padding: 0;
     width: 100%;
+}
+
+.member{
+    &-item{
+        &-icon{
+            width: 24px !important;
+            height: 24px !important;
+        }
+    }
 }
