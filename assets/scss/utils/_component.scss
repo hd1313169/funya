@@ -563,7 +563,19 @@ button.bg-primary:hover {
     background-color: white;
 
     @include medium {
-        background-image: url(https://raw.githubusercontent.com/hd1313169/funya/27ea1e476e389364efc4b83b728308d476e13309/assets/images/bg-signIn-test.svg);
+        background-image: url(https://raw.githubusercontent.com/hd1313169/funya/27ea1e476e389364efc4b83b728308d476e13309/assets/images/bg-logIn.svg);
+        background-size: cover;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+    }
+
+}
+
+.bg-logIn {
+    background-color: white;
+
+    @include medium {
+        background-image: url(https://raw.githubusercontent.com/hd1313169/funya/27ea1e476e389364efc4b83b728308d476e13309/assets/images/bg-logIn.svg);
         background-size: cover;
         background-position: 0 0;
         background-repeat: no-repeat;
