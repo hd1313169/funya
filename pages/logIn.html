@@ -38,42 +38,43 @@
     <div class="row align-items-center g-0">
       <div class="col-12 col-md-6">
         <div style="height: 100vh; overflow: hidden;">
-          <div class="w-sm-60 mx-auto text-center px-32 px-md-0 pt-120 pt-md-160">
-            <h1 class="fs-32 mb-16">註冊會員</h1>
-            <p class="text-gray-600 mb-16 mb-md-32">很高興認識你！如果你也喜歡閱讀熱愛分享，歡迎註冊會員和我們一起享受發芽時光</p>
-            <ul class="m-0 p-0 mb-24 mb-md-40">
-              <!-- fb註冊 -->
-              <li class="mb-24">
-                <div class="position-relative">
-                  <div class="btn-height bg-gray-300"></div>
-                  <div class="btn-primary bg-light border py-12">
-                    <img src="../assets/images/icon-facebook.svg" alt="facebook" class="member-item-icon me-8">
-                    <a href="#" class="stretched-link text-dark">Facebook 註冊</a>
-                  </div>
+          <div class="w-sm-60 mx-auto px-32 px-md-0 pt-120 pt-md-160">
+            <h1 class="fs-32 mb-16 text-center">會員登入</h1>
+            <p class="text-gray-600 text-center mb-16 mb-md-32">歡迎回來！現在就登入讓我們繼續享受發芽時光吧</p>
+            <ul class="d-flex">
+              <li class="position-relative">
+                <div class="btn-height bg-gray-300 rounded-circle"></div>
+                <div class="btn-primary bg-light border rounded-circle" style="width: 64px; height: 64px;">
+                  <img src="../assets/images/icon-facebook.svg" alt="facebook" class="logIn-item-icon">
+                  <a href="#" class="stretched-link text-dark"></a>
                 </div>
               </li>
-              <!-- google註冊 -->
-              <li class="mb-24">
-                <div class="position-relative">
-                  <div class="btn-height bg-gray-300"></div>
-                  <div class="btn-primary bg-light border py-12">
-                    <img src="../assets/images/icon-google.svg" alt="facebook" class="member-item-icon me-8">
-                    <a href="#" class="stretched-link text-dark">Google 註冊</a>
-                  </div>
-                </div>
-              </li>
-              <!-- 信箱註冊 -->
-              <li>
-                <div class="position-relative">
-                  <div class="btn-height bg-gray-300"></div>
-                  <div class="btn-primary bg-light border py-12">
-                    <img src="../assets/images/icon-email.svg" alt="facebook" class="member-item-icon me-8">
-                    <a href="signIn-email.html" class="stretched-link text-dark">Email 註冊</a>
-                  </div>
+              <li class="position-relative">
+                <div class="btn-height bg-gray-300 rounded-circle"></div>
+                <div class="btn-primary bg-light border rounded-circle" style="width: 64px; height: 64px;">
+                  <img src="../assets/images/icon-google.svg" alt="facebook" class="logIn-item-icon">
+                  <a href="#" class="stretched-link text-dark"></a>
                 </div>
               </li>
             </ul>
-            <span class="text-gray-600 me-8">已經是會員？</span><a href="lognIn.html">會員登入</a>
+
+            <div class="mb-24">
+              <label for="signInEmail" class="form-label">Email 信箱</label>
+              <input type="email" class="form-control bg-light border-0 fs-16 p-12" id="signInEmail"
+                aria-describedby="emailHelp" placeholder="請輸入Email 信箱">
+            </div>
+            <div class="mb-24">
+              <label for="signInPassword" class="form-label">密碼</label>
+              <div class="input-group">
+                <input type="password " class="form-control bg-light border-0 fs-16 p-12" id="signInPassword"
+                  placeholder="請輸入密碼">
+                <button class="border-0" id="basic-addon2"><span class="material-symbols-outlined">
+                    visibility
+                  </span></button>
+              </div>
+            </div>
+
+            <span class="text-gray-600 me-8">還不是是會員？</span><a href="signIn.html">註冊會員</a>
           </div>
           <div>
             <img src="../assets/images/bg-signIn-mobile.svg" alt="註冊" class="w-75 d-block d-md-none fit-contain">

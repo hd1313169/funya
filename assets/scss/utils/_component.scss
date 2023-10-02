@@ -550,7 +550,7 @@ button.bg-primary:hover {
     width: 100%;
 }
 
-.member {
+.signUp {
     &-item {
         &-icon {
             width: 24px !important;
@@ -558,12 +558,19 @@ button.bg-primary:hover {
         }
     }
 }
-
-.bg-signIn {
+.logIn {
+    &-item {
+        &-icon {
+            width: 40px !important;
+            height: 40px !important;
+        }
+    }
+}
+.bg-signUp {
     background-color: white;
 
     @include medium {
-        background-image: url(https://raw.githubusercontent.com/hd1313169/funya/27ea1e476e389364efc4b83b728308d476e13309/assets/images/bg-logIn.svg);
+        background-image: url(https://raw.githubusercontent.com/hd1313169/funya/d15883a0297346bd9740876642b86d480b96f2b2/assets/images/bg-signUp.svg);
         background-size: cover;
         background-position: 0 0;
         background-repeat: no-repeat;
@@ -575,7 +582,7 @@ button.bg-primary:hover {
     background-color: white;
 
     @include medium {
-        background-image: url(https://raw.githubusercontent.com/hd1313169/funya/27ea1e476e389364efc4b83b728308d476e13309/assets/images/bg-logIn.svg);
+        background-image: url(https://raw.githubusercontent.com/hd1313169/funya/d15883a0297346bd9740876642b86d480b96f2b2/assets/images/bg-logIn.svg);
         background-size: cover;
         background-position: 0 0;
         background-repeat: no-repeat;
