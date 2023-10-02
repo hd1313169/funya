@@ -31,12 +31,12 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
   <link rel='stylesheet'
     href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css'>
-  <script type="module" crossorigin src="/funya/assets/main-7a30bd2b.js"></script>
-  <link rel="stylesheet" href="/funya/assets/main-ec754ae5.css">
+  <script type="module" crossorigin src="/funya/assets/main-5efc9bb1.js"></script>
+  <link rel="stylesheet" href="/funya/assets/main-9f035b21.css">
 </head>
 
 <body>
-  <div class="bg-signIn w-100 h-100" style="height: 100vh;">
+  <div class="bg-signUp w-100 h-100" style="height: 100vh;">
     <div class="row align-items-center g-0">
       <div class="col-12 col-md-6 offset-md-6">
         <div style="height: 100vh; overflow: hidden;">
@@ -44,19 +44,19 @@
             <h1 class="fs-24 text-center mb-24 mb-md-40">Email 註冊</h1>
             <form>
               <div class="mb-24">
-                <label for="signInName" class="form-label">名稱</label>
-                <input type="text" class="form-control bg-light border-0 fs-16 p-12" id="signInName"
+                <label for="signUpName" class="form-label">名稱</label>
+                <input type="text" class="form-control bg-light border-0 fs-16 p-12" id="signUpName"
                   placeholder="請輸入會員名稱 (20個字元以內)">
               </div>
               <div class="mb-24">
-                <label for="signInEmail" class="form-label">Email 信箱</label>
-                <input type="email" class="form-control bg-light border-0 fs-16 p-12" id="signInEmail"
+                <label for="signUpEmail" class="form-label">Email 信箱</label>
+                <input type="email" class="form-control bg-light border-0 fs-16 p-12" id="signUpEmail"
                   aria-describedby="emailHelp" placeholder="請輸入Email 信箱">
               </div>
               <div class="mb-24">
-                <label for="signInPassword" class="form-label">密碼</label>
+                <label for="signUpPassword" class="form-label">密碼</label>
                 <div class="input-group">
-                  <input type="password " class="form-control bg-light border-0 fs-16 p-12" id="signInPassword"
+                  <input type="password " class="form-control bg-light border-0 fs-16 p-12" id="signUpPassword"
                     placeholder="請輸入密碼">
                   <button class="border-0" id="basic-addon2"><span class="material-symbols-outlined">
                       visibility
@@ -64,9 +64,9 @@
                 </div>
               </div>
               <div class="mb-40">
-                <label for="signInPassword" class="form-label">確認密碼</label>
+                <label for="signUpPassword" class="form-label">確認密碼</label>
                 <div class="input-group">
-                  <input type="password " class="form-control bg-light border-0 fs-16 p-12" id="signInPassword"
+                  <input type="password " class="form-control bg-light border-0 fs-16 p-12" id="signUpPassword"
                     placeholder="請再次輸入密碼">
                   <button class="border-0" id="basic-addon2"><span class="material-symbols-outlined">
                       visibility
@@ -78,13 +78,13 @@
                 <div class="btn-height bg-primary-dark"></div>
                 <div class="btn-primary bg-primary pt-16 pb-12">
                   <a href="#" class="stretched-link text-center text-white" data-bs-toggle="modal"
-                    data-bs-target="#signInNotify">成為會員</a>
+                    data-bs-target="#signUpNotify">成為會員</a>
                 </div>
               </div>
 
               <!-- Modal -->
-              <div class="modal" id="signInNotify" data-bs-backdrop="static" tabindex="-1"
-                aria-labelledby="signInNotifyLabel" aria-hidden="true">
+              <div class="modal" id="signUpNotify" data-bs-backdrop="static" tabindex="-1"
+                aria-labelledby="signUpNotifyLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header border-0">
@@ -94,7 +94,7 @@
                       <span class="material-symbols-outlined fs-64 text-primary">
                         send
                       </span>
-                      <h2 class="fs-24 mb-8" id="signInNotifyLabel">郵件已寄出</h2>
+                      <h2 class="fs-24 mb-8" id="signUpNotifyLabel">郵件已寄出</h2>
                       <p class="mb-24">我們已將會員驗證信發送給您，<br>
                         請到信箱點擊連結驗證！</p>
                       <a href="#" class="w-25 d-inline-block bg-primary rounded-8 text-white px-16 py-12 mb-16" data-bs-dismiss="modal">確認</a>
@@ -109,7 +109,7 @@
             </div>
           </div>
           <div>
-            <img src="/funya/assets/bg-signIn-mobile-94b8f25c.svg" alt="註冊" class="w-75 d-block d-md-none fit-contain">
+            <img src="/funya/assets/bg-signUp-mobile-94b8f25c.svg" alt="註冊" class="w-75 d-block d-md-none fit-contain">
           </div>
         </div>
       </div>
@@ -118,7 +118,7 @@
   
   <script>
     function ok() {
-      let pass = document.getElementById('signInPassword');
+      let pass = document.getElementById('signUpPassword');
       let word = pass.getAttribute('type');
       console.log(word);
       if (word == 'password') {
