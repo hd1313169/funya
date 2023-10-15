@@ -80,6 +80,40 @@
       </div>
 
       <!-- 分頁 -->
+      <!-- 分頁頁籤 -->
+      <div class="d-flex justify-content-between align-items-center">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="intro-tab" data-bs-toggle="tab" data-bs-target="#intro" type="button"
+              role="tab" aria-controls="intro" aria-selected="true">書聚介紹</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="info-tab" data-bs-toggle="tab" data-bs-target="#info" type="button" role="tab"
+              aria-controls="info" aria-selected="false">書本資訊</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="chat-tab" data-bs-toggle="tab" data-bs-target="#chat" type="button" role="tab"
+              aria-controls="chat" aria-selected="false">討論區</button>
+          </li>
+        </ul>
+        <div class="position-relative">
+          <div class="btn-height bg-primary-dark"></div>
+          <div class="btn-primary bg-primary ps-16 pe-20 pt-12 pb-8">
+            <img class="me-8" src="../assets/images/icon-holdEvent.svg" alt="hold a evnet">
+            <a href="#" class="stretched-link text-white">我要揪團</a>
+          </div>
+        </div>
+      </div>
+      <!-- 分頁頁籤 end-->
+
+      <!-- 分頁內容 -->
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="intro" role="tabpanel" aria-labelledby="info-tab">...</div>
+        <div class="tab-pane fade" id="info" role="tabpanel" aria-labelledby="info-tab">...</div>
+        <div class="tab-pane fade" id="chat" role="tabpanel" aria-labelledby="chat-tab">...</div>
+      </div>
+      <!-- 分頁內容 end-->
+      <!-- 分頁 end-->
 
     </div>
     <%- include('./layout/footer'); -%>
