@@ -31,8 +31,8 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
   <link rel='stylesheet'
     href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css'>
-  <script type="module" crossorigin src="/funya/assets/main-5fd1ad36.js"></script>
-  <link rel="stylesheet" href="/funya/assets/main-76513b91.css">
+  <script type="module" crossorigin src="/funya/assets/main-93259b00.js"></script>
+  <link rel="stylesheet" href="/funya/assets/main-87af264d.css">
 </head>
 
 <body>
@@ -281,7 +281,8 @@
       <div class="py-40 py-md-80">
         <div class="row">
           <div class="col-md-4">
-            <img src="/funya/assets/bookcover-d8385228.png" class="bookcover d-block mx-auto fit-contain" alt="bookcover">
+            <img src="/funya/assets/bookcover-d8385228.png" class="bookcover d-block mx-auto fit-contain mb-24 mb-md-0"
+              alt="bookcover">
           </div>
           <div class="col-md-7 offset-md-0">
 
@@ -300,63 +301,137 @@
             <div class="d-flex">
               <span class="d-inline bg-secondary-dark text-white rounded-pill px-8 py-2 fs-14 me-8">心理勵志</span>
               <span class="d-inline bg-secondary-dark text-white rounded-pill px-8 py-2 fs-14">自然科普</span>
-
-              <!-- <div
-                  class="border-0 d-flex flex-column justify-content-center align-items-center">
-                  <p class="position-relative stretched-link text-center me-24" href="#">
-                    <span class="material-symbols-outlined d-block fs-32 mb-4">
-                      interests
-                    </span>心理勵志</p>
-                </div>
-                <div
-                  class="border-0 d-flex flex-column justify-content-center align-items-center">
-                  <p class="position-relative stretched-link text-center " href="#">
-                    <span class="material-symbols-outlined d-block fs-32 mb-4">
-                      hiking
-                    </span>生涯規劃</p>
-                </div> -->
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="shadow">
+      <div class="container">
+        <!-- 分頁 -->
+        <div class="row align-items-center flex-column-reverse flex-md-row">
+          <div class="col-12 col-md-9 col-lg-7 offset-lg-1">
+            <!-- 分頁頁籤 -->
+            <ul class="nav nav-tabs mx-auto mb-8 border-0" id="joinIntroTab" role="tablist">
+              <li class="nav-item mx-auto mx-md-0 me-md-80" role="presentation">
+                <button class="nav-link active position-relative" id="intro-tab" data-bs-toggle="tab"
+                  data-bs-target="#intro" type="button" role="tab" aria-controls="intro"
+                  aria-selected="true">書聚介紹</button>
+              </li>
+              <li class="nav-item mx-auto mx-md-0 me-md-80" role="presentation">
+                <button class="nav-link position-relative" id="info-tab" data-bs-toggle="tab" data-bs-target="#info"
+                  type="button" role="tab" aria-controls="info" aria-selected="false">書本資訊</button>
+              </li>
+              <li class="nav-item mx-auto mx-md-0" role="presentation">
+                <button class="nav-link position-relative" id="chat-tab" data-bs-toggle="tab" data-bs-target="#chat"
+                  type="button" role="tab" aria-controls="chat" aria-selected="false">討論區</button>
+              </li>
+            </ul>
+            <!-- 分頁頁籤 end-->
+          </div>
+          <div class="col-12 col-md-3 mb-48 mb-md-16">
+            <!-- 加團按鈕 -->
+            <div class="position-relative">
+              <div class="btn-height bg-gray-600"></div>
+              <div class="btn-primary bg-gray-300 ps-16 pe-20 pt-12 pb-8">
+                <img class="me-8" src="/funya/assets/icon-join-06d38c81.svg" alt="join a evnet">
+                <a href="#" class="stretched-link text-gray-800 fw-bold">我要參加</a>
+              </div>
+            </div>
+            <!-- 加團按鈕 end-->
+          </div>
+        </div>
+        <!-- 分頁 end-->
+      </div>
+    </div>
 
-      <!-- 分頁 -->
-      <!-- 分頁頁籤 -->
-      <div class="d-flex justify-content-between align-items-center">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="intro-tab" data-bs-toggle="tab" data-bs-target="#intro" type="button"
-              role="tab" aria-controls="intro" aria-selected="true">書聚介紹</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="info-tab" data-bs-toggle="tab" data-bs-target="#info" type="button" role="tab"
-              aria-controls="info" aria-selected="false">書本資訊</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="chat-tab" data-bs-toggle="tab" data-bs-target="#chat" type="button" role="tab"
-              aria-controls="chat" aria-selected="false">討論區</button>
-          </li>
-        </ul>
-        <div class="position-relative">
-          <div class="btn-height bg-primary-dark"></div>
-          <div class="btn-primary bg-primary ps-16 pe-20 pt-12 pb-8">
-            <img class="me-8" src="/funya/assets/icon-holdEvent-57cc3bee.svg" alt="hold a evnet">
-            <a href="#" class="stretched-link text-white">我要揪團</a>
+    <!-- 分頁內容 -->
+    <div class="container">
+      <div class="py-48 py-md-60 border-bottom mb-120">
+        <div class="row">
+          <div class="col-12 col-lg-10 offset-lg-1">
+            <div class="tab-content" id="joinIntroTabContent">
+              <!-- 書聚介紹 -->
+              <div class="tab-pane fade show active" id="intro" role="tabpanel" aria-labelledby="info-tab">
+
+                <div class="border-bottom">
+                  <div class="mb-48">
+                    <p class="fs-20 fw-semibold mb-8">書聚時間</p>
+                    <ul class="m-0 p-0">
+                      <li class="mb-8">2023/06/17(六) 14:00 - 17:00</li>
+                      <li class="mb-8">2023/06/17(六) 14:00 - 17:00</li>
+                      <li class="mb-8">2023/06/17(六) 14:00 - 17:00</li>
+                      <li class="mb-8">2023/06/17(六) 14:00 - 17:00</li>
+                      <li class="mb-8">2023/06/17(六) 14:00 - 17:00</li>
+                    </ul>
+                  </div>
+
+                  <div class="mb-48">
+                    <p class="fs-20 fw-semibold mb-8">書聚地點</p>
+                    <span class="material-symbols-outlined text-secondary">
+                      location_on
+                    </span>
+                    <a href="#">40758台中市西屯區文心路二段501號</a>
+                  </div>
+
+                  <div class="mb-48">
+                    <p class="fs-20 fw-semibold mb-8">討論方式</p>
+                    <p>提出書中案例討論，每個人分享該次章節的閱讀心得，最後總結該次讀書會重點。</p>
+                  </div>
+
+                  <div class="mb-48">
+                    <p class="fs-20 fw-semibold mb-8">截止日期</p>
+                    <div class="d-flex align-items-center">
+                      <p class="me-8">2023/06/10(六)</p>
+                      <p class="bg-danger p-8 rounded-2 fs-14 text-white">剩餘 16 天</p>
+                    </div>
+                  </div>
+
+                  <div class="mb-48">
+                    <p class="fs-20 fw-semibold mb-8">書聚規則</p>
+                    <ol class="list-group list-group-numbered m-0 p-0">
+                      <li class="list-group-item border-0 p-0 mb-8">第一次聚會，先討論讀書會規則與方式。 第一次聚會，先討論讀書會規則與方式。</li>
+                      <li class="list-group-item border-0 p-0 mb-8">請大家參與讀書會前先看完書。請大家參與讀書會前先看完書。請大家 參與讀書會前先看完書。</li>
+                      <li class="list-group-item border-0 p-0 mb-8">無故不到3次，則自動取消資格。</li>
+                    </ol>
+                  </div>
+
+                  <div class="mb-48">
+                    <p class="fs-20 fw-semibold mb-8">補充資訊</p>
+                    <p>預計讀書會分享流程：
+                      5分鐘　自我介紹
+                      60分鐘　問題討論
+                      30分鐘　分享心得</p>
+                  </div>
+                </div>
+
+              </div>
+              <!-- 書聚介紹 end-->
+              <!-- 書本資訊 -->
+              <div class="tab-pane fade" id="info" role="tabpanel" aria-labelledby="info-tab">
+
+                <div class="d-flex align-items-start flex-column flex-md-row mb-24">
+                  <p class="fw-semibold mb-8 mb-md-0 me-md-24">書本名稱</p>
+                  <p>如何改變一個人：華頓商學院教你消除抗拒心理，從心擁抱改變</p>
+                </div>
+
+
+              </div>
+              <!-- 書本資訊 end-->
+              <!-- 討論區 -->
+              <div class="tab-pane fade" id="chat" role="tabpanel" aria-labelledby="chat-tab">
+
+              </div>
+              <!-- 討論區 end-->
+            </div>
           </div>
         </div>
       </div>
-      <!-- 分頁頁籤 end-->
-
-      <!-- 分頁內容 -->
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="intro" role="tabpanel" aria-labelledby="info-tab">...</div>
-        <div class="tab-pane fade" id="info" role="tabpanel" aria-labelledby="info-tab">...</div>
-        <div class="tab-pane fade" id="chat" role="tabpanel" aria-labelledby="chat-tab">...</div>
-      </div>
-      <!-- 分頁內容 end-->
-      <!-- 分頁 end-->
-
     </div>
+
+
+    <!-- 分頁內容 end-->
+
     <div class="bg-secondary-dark footer">
     <div class="container-fluid px-16 px-md-40 pt-80 pb-40">
         <img class="logo mb-40" src="/funya/assets/funya-logo-white-58d16bf2.png" alt="logo">
