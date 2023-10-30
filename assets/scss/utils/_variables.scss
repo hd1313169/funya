@@ -928,7 +928,7 @@ $input-focus-border-color: tint-color($component-active-bg, 50%) !default;
 $input-focus-color: $input-color !default;
 $input-focus-width: $input-btn-focus-width !default;
 // $input-focus-box-shadow: $input-btn-focus-box-shadow !default;
-$input-focus-box-shadow: none !default;
+$input-focus-box-shadow: 0 0 $input-btn-focus-blur $input-btn-focus-width $input-btn-focus-color !default;
 
 
 // $input-placeholder-color: $gray-600 !default;
