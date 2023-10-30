@@ -147,7 +147,6 @@ button.bg-primary:hover {
 .btn {
     &-primary {
         position: relative;
-        // z-index: 2;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -590,10 +589,10 @@ button.bg-primary:hover {
         }
     }
 
-    &-or{
+    &-or {
         position: relative;
 
-        &::before{
+        &::before {
             content: "";
             position: absolute;
             width: calc((100% - 60px) / 2);
@@ -602,7 +601,8 @@ button.bg-primary:hover {
             bottom: 50%;
             left: 0;
         }
-        &::after{
+
+        &::after {
             content: "";
             position: absolute;
             width: calc((100% - 60px) / 2);
@@ -613,6 +613,7 @@ button.bg-primary:hover {
         }
     }
 }
+
 .bg-signUp {
     background-color: white;
 
@@ -637,7 +638,7 @@ button.bg-primary:hover {
 
 }
 
-.bookcover{
+.bookcover {
     max-height: 360px;
 }
 
@@ -680,9 +681,36 @@ button.bg-primary:hover {
             }
         }
     }
+
+    &-tabs {
+        top: 72px;
+        z-index: 990;
+
+        @include medium {
+            top: 76px;
+        }
+
+        @include large {
+            top: 92px;
+        }
+    }
 }
 
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+.book-info-title {
+    width: 80px;
+}
+
+.clubMember {
+    &-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 100px;
+    }
+}
+
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
     border: 0 !important;
     color: $primary-dark !important;
 
