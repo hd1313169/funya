@@ -453,7 +453,8 @@ $body-text-align: null !default;
 $link-color: $dark !default; //$primary !default;
 $link-decoration: none !default; //underline !default;
 $link-shade-percentage: 20% !default;
-$link-hover-color: $primary !default; //shift-color($link-color, $link-shade-percentage) !default;
+// $link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-color: $primary !default;
 $link-hover-decoration: null !default;
 
 $stretched-link-pseudo-element: after !default;
@@ -928,7 +929,7 @@ $input-focus-border-color: tint-color($component-active-bg, 50%) !default;
 $input-focus-color: $input-color !default;
 $input-focus-width: $input-btn-focus-width !default;
 // $input-focus-box-shadow: $input-btn-focus-box-shadow !default;
-$input-focus-box-shadow: 0 0 $input-btn-focus-blur $input-btn-focus-width $input-btn-focus-color !default;
+$input-focus-box-shadow: none !default;
 
 
 // $input-placeholder-color: $gray-600 !default;

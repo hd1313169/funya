@@ -6,6 +6,15 @@ button.bg-primary:hover {
     background-color: $primary !important;
 }
 
+a.text-primary:focus,
+a.text-primary:hover {
+    color: $primary !important;
+}
+
+.fw-medium {
+    font-weight: 600 !important;
+}
+
 // 圖片
 .fit-contain {
     object-fit: contain !important;
@@ -14,6 +23,10 @@ button.bg-primary:hover {
 //漸層
 .bg-linear-light {
     background: linear-gradient(to bottom, $white 0%, $secondary-light 100%);
+}
+
+.bg-none {
+    background-color: transparent !important;
 }
 
 // 寬高 ----------------------------------------------------------------
@@ -42,6 +55,12 @@ button.bg-primary:hover {
 }
 
 //hover
+.hover-primary {
+    &:hover {
+        color: $primary !important;
+    }
+}
+
 .hover-danger {
     &:hover {
         color: $danger !important;
@@ -705,6 +724,12 @@ button.bg-primary:hover {
         width: 80px;
         height: 80px;
         border-radius: 100px;
+
+        &-sm {
+            width: 48px;
+            height: 48px;
+            border-radius: 100px;
+        }
     }
 }
 
