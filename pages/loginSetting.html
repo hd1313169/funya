@@ -47,7 +47,7 @@
               class="myInfo-list m-0 p-0 mb-64 mb-lg-0 d-flex flex-lg-column justify-content-between justify-content-lg-start align-items-center align-items-start">
 
               <!-- 基本資料 -->
-              <li class="myInfo-list-item myInfo-list-item-active"><a href="myInfo.html">
+              <li class="myInfo-list-item"><a href="myInfo.html">
                   <span class="material-symbols-outlined d-none d-lg-inline-block align-middle me-lg-8">
                     account_circle
                   </span>
@@ -56,7 +56,7 @@
               </li>
 
               <!-- 登入方式 -->
-              <li class="myInfo-list-item"><a href="loginSetting.html">
+              <li class="myInfo-list-item myInfo-list-item-active"><a href="loginSetting.html">
                   <span class="material-symbols-outlined d-none d-lg-inline-block align-middle me-lg-8">
                     login
                   </span>
@@ -76,89 +76,39 @@
           </div>
           <!-- 側邊欄 end-->
 
-          <!-- 我的資料表單 -->
+          <!-- 登入方式列表 -->
           <div class="col-12 col-lg-8 offset-lg-1">
-            <!-- 大頭照 -->
-            <div class="myInfo-avatar mx-auto mb-24 mb-lg-40">
-              <img class="img-fluid" src="../assets/images/avatar-01.png" alt="user ">
-              <a href="#" class="editAvatar bg-gray-500">
-                <span class="material-symbols-outlined text-white">
-                  edit
-                </span>
-              </a>
-            </div>
-            <!-- 大頭照 end -->
-
-            <!-- 資料欄位 -->
-
-            <!-- 名稱 -->
-            <div class="mb-24">
-              <label for="editName" class="form-label mb-4">名稱</label>
-              <input type="text" class="form-control bg-light border-0 fs-16 p-12" id="editName"
-                placeholder="請輸入會員名稱 (20個字元以內)">
-            </div>
-
-            <!-- 信箱 -->
-            <div class="mb-24">
-              <label for="editEmail" class="form-label mb-4">Email 信箱</label>
-              <input type="email" class="form-control bg-light border-0 fs-16 p-12" id="editEmail"
-                aria-describedby="emailHelp" placeholder="請輸入Email 信箱">
-            </div>
-
-            <!-- 電話 -->
-            <div class="mb-24">
-              <label for="editPhone" class="form-label mb-4">行動電話</label>
-              <input type="email" class="form-control bg-light border-0 fs-16 p-12" id="editPhone"
-                placeholder="請輸入行動電話">
-            </div>
-
-            <!-- 生日 -->
-            <div class="mb-24">
-              <label for="editBirthDate" class="form-label mb-4">生日</label>
-              <input type="email" class="form-control bg-light border-0 fs-16 p-12" id="editBirthDate"
-                placeholder="請輸入生日">
-            </div>
-
-            <!-- 性別 -->
-            <div class="mb-24">
-              <label class="form-label mb-8">性別</label>
-              <div class="d-flex">
-                <div class="form-check me-24">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="privateGender" checked>
-                  <label class="form-check-label" for="privateGender">
-                    不公開
-                  </label>
+            <ul class="m-0 p-0">
+              <li
+                class="d-flex flex-column flex-md-row justify-content-between align-items-md-center fs-18 border-bottom border-gray-300 pb-24 pb-md-40">
+                <div class="d-flex flex-column flex-lg-row mb-16 mb-md-0">
+                  <p class="me-lg-80 mb-8 mb-lg-0">Email 登入</p>
+                  <p class="text-gray-600">已建立帳號：wsad71155@gmail.com</p>
                 </div>
-                <div class="form-check me-24">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="male">
-                  <label class="form-check-label" for="male">
-                    男性
-                  </label>
+                <a href="#" class="btn-flat-outline-sm">變更密碼</a>
+              </li>
+
+              <li
+                class="d-flex flex-column flex-md-row justify-content-between align-items-md-center fs-18 border-bottom border-gray-300 py-24 py-md-40">
+                <div class="d-flex flex-column flex-lg-row mb-16 mb-md-0">
+                  <p class="me-lg-80 mb-8 mb-lg-0">Facebook 登入</p>
+                  <p class="text-gray-600">尚未連結Facebook 帳號</p>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="male">
-                  <label class="form-check-label" for="male">
-                    女性
-                  </label>
+                <a href="#" class="btn-flat-primary-sm">連結帳號</a>
+              </li>
+
+              <li
+                class="d-flex flex-column flex-md-row justify-content-between align-items-md-center fs-18 border-bottom border-gray-300 py-24 py-md-40">
+                <div class="d-flex flex-column flex-lg-row mb-16 mb-md-0">
+                  <p class="me-lg-80 mb-8 mb-lg-0">Google 登入</p>
+                  <p class="text-gray-600">已連結wsad71155@gmail.com</p>
                 </div>
-              </div>
-            </div>
-
-            <!-- 自我介紹 -->
-            <div class="mb-24 mb-lg-40">
-              <label class="form-label mb-8">自我介紹</label>
-
-              <textarea class="form-control" aria-label="With textarea" rows="8"></textarea>
-            </div>
-
-            <!-- 儲存按鈕 -->
-            <a href="#" class="btn-flat-primary mx-auto">
-              儲存變更
-            </a>
-            <!-- 資料欄位 end -->
+                <a href="#" class="btn-flat-outline-sm">取消連結</a>
+              </li>
+            </ul>
 
           </div>
-          <!-- 我的資料表單 end -->
+          <!-- 登入方式列表 end -->
 
         </div>
       </div>

@@ -216,6 +216,75 @@ a.text-primary:hover {
     }
 }
 
+.btn-flat {
+
+    &-primary {
+        display: block;
+        width: 200px;
+        font-size: 18px;
+        text-align: center;
+        color: $white;
+        background-color: $primary;
+        border-radius: 12px;
+        padding: 16px 0;
+
+        &:hover {
+            background-color: #1D6C30 !important;
+            color: $white;
+        }
+    }
+
+    &-primary-sm {
+        display: block;
+        width: 140px;
+        font-size: 16px;
+        text-align: center;
+        color: $white;
+        background-color: $primary;
+        border-radius: 8px;
+        padding: 12px 0;
+
+        &:hover {
+            background-color: #1D6C30 !important;
+            color: $white;
+        }
+    }
+
+    &-outline{
+        display: block;
+        width: 200px;
+        font-size: 18px;
+        text-align: center;
+        color: $dark;
+        border: 1px solid #6C757D;
+        background-color: $white;
+        border-radius: 12px;
+        padding: 16px 0;
+
+        &:hover {
+            border: 1px solid $primary;
+            color: $primary;
+        } 
+    }
+
+    &-outline-sm{
+        display: block;
+        width: 140px;
+        font-size: 16px;
+        text-align: center;
+        color: $dark;
+        border: 1px solid #6C757D;
+        background-color: $white;
+        padding: 12px 0;
+        border-radius: 8px;
+        
+        &:hover {
+            border: 1px solid $primary;
+            color: $primary;
+        } 
+    }
+
+}
 
 .footer {
     .sitemap {
