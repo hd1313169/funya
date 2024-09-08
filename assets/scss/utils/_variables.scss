@@ -301,6 +301,10 @@ $primary-dark: #1D6C30 !default;
 $secondary: #FF9518 !default;
 $secondary-light: #FAE7D0 !default;
 $secondary-dark: #946846 !default;
+$secondary-200: #F4F1EB !default;
+$secondary-300: #E8DFD4 !default;
+$secondary-500: #F7E9D7 !default;
+$secondary-600: #EFDFB2 !default;
 $success: #62A6F4 !default;
 $info: #6AD082 !default;
 $warning: #FFE500 !default;
@@ -311,6 +315,8 @@ $gray-300: $gray-300 !default;
 $gray-500: $gray-500 !default;
 $gray-600: $gray-600 !default;
 $gray-800: $gray-800 !default;
+$brown: #563821 !default;
+
 
 // scss-docs-end theme-color-variables
 
@@ -322,6 +328,10 @@ $theme-colors: (
   "secondary": $secondary,
   "secondary-light": $secondary-light,
   "secondary-dark": $secondary-dark,
+  "secondary-200": $secondary-200,
+  "secondary-300": $secondary-300,
+  "secondary-500": $secondary-500,
+  "secondary-600": $secondary-600,
   "success": $success,
   "info": $info,
   "warning": $warning,
@@ -333,6 +343,7 @@ $theme-colors: (
   "gray-500": $gray-500,
   "gray-600": $gray-600,
   "gray-800": $gray-800,
+  "brown": $brown,
   ) !default;
 // scss-docs-end theme-colors-map
 
@@ -585,7 +596,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: 'Niramit',
+$font-family-sans-serif: "Baloo 2", 'Niramit', 
   'Noto Sans TC',
   system-ui,
   -apple-system,
@@ -1163,7 +1174,8 @@ $nav-link-transition: color .15s ease-in-out,
   border-color .15s ease-in-out !default;
 $nav-link-disabled-color: $gray-600 !default;
 
-$nav-tabs-border-color: $gray-300 !default;
+// $nav-tabs-border-color: $gray-300 !default;
+$nav-tabs-border-color: none !default;
 $nav-tabs-border-width: $border-width !default;
 $nav-tabs-border-radius: $border-radius !default;
 $nav-tabs-link-hover-border-color: $gray-200 $gray-200 $nav-tabs-border-color !default;
@@ -1563,11 +1575,11 @@ $alert-dismissible-padding-r: $alert-padding-x * 3 !default; // 3x covers width 
 // scss-docs-start progress-variables
 $progress-height: 1rem !default;
 $progress-font-size: $font-size-base * .75 !default;
-$progress-bg: $gray-200 !default;
+$progress-bg: $secondary-300 !default;
 $progress-border-radius: $border-radius !default;
 $progress-box-shadow: $box-shadow-inset !default;
 $progress-bar-color: $white !default;
-$progress-bar-bg: $primary !default;
+$progress-bar-bg: $secondary !default;
 $progress-bar-animation-timing: 1s linear infinite !default;
 $progress-bar-transition: width .6s ease !default;
 // scss-docs-end progress-variables
